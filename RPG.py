@@ -1254,8 +1254,7 @@ def main():
     gameplay()
 
 
-if __name__ == '__main__':
-    main()
+main()
 
 # Boss a ser implementado
 # Sua aparência VVVVVV
