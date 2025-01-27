@@ -2,11 +2,26 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RPGame</title>
+    <title>Conectando GitHub Pages ao Backend Python</title>
 </head>
 <body>
-    <h1>Bem-vindo ao RPGame!</h1>
-    <p>Site hospedado no GitHub Pages.</p>
+    <h1>Resposta do Backend:</h1>
+    <p id="resposta">Carregando...</p>
+
+    <script>
+        // URL do backend no Render
+        const url = "https://rpg-game-frec.onrender.com/";
+
+        // Buscar dados do backend
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("resposta").innerText = data.mensagem;
+            })
+            .catch(error => {
+                console.error("Erro ao conectar ao backend:", error);
+                document.getElementById("resposta").innerText = "Erro ao carregar dados.";
+            });
+    </script>
 </body>
 </html>
