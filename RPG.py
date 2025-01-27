@@ -953,7 +953,7 @@ def church():
                                     print(f'Você comprou {escolha_1_1} poção(ões) de vida por {preco_hp_final}$')
                                     time.sleep(2)
                                     globals()['hp_pot'] += escolha_1_1
-                                    print(f'Você agora tem {globals()['hp_pot']} poção(ões) de vida')
+                                    print('Você agora tem {} poção(ões) de vida'.format(globals()['hp_pot']))
                                     time.sleep(2)
                                 else:
                                     print('Você não tem moedas de ouro suficientes')
@@ -965,7 +965,7 @@ def church():
                                 print(f'Você comprou {escolha_1_1} poção(ões) de vida por {preco_hp_final}$')
                                 time.sleep(2)
                                 globals()['hp_pot'] += escolha_1_1
-                                print(f'Você agora tem {globals()['hp_pot']} poção(ões) de vida')
+                                print('Você agora tem {} poção(ões) de vida'.format(globals()['hp_pot']))
                                 time.sleep(2)
                             else:
                                 print('Você não tem moedas de ouro suficientes')
@@ -991,7 +991,7 @@ def church():
                                     print(f'Você comprou {escolha_1_2} poção(ões) de mana por {preco_mp_final}$')
                                     time.sleep(2)
                                     globals()['mp_pot'] += escolha_1_2
-                                    print(f'Você agora tem {globals()['mp_pot']} poção(ões) de mana')
+                                    print('Você agora tem {} poção(ões) de vida'.format(globals()['mp_pot']))
                                     time.sleep(2)
                                 else:
                                     print('Você não tem moedas de ouro suficientes')
@@ -1002,7 +1002,7 @@ def church():
                                 print(f'Você comprou {escolha_1_2} poção(ões) de mana por {preco_mp_final}$')
                                 time.sleep(2)
                                 globals()['mp_pot'] += escolha_1_2
-                                print(f'Você agora tem {globals()['mp_pot']} poção(ões) de mana')
+                                print('Você agora tem {} poção(ões) de vida'.format(globals()['mp_pot']))
                                 time.sleep(2)
                             else:
                                 print('Você não tem moedas de ouro suficientes')
